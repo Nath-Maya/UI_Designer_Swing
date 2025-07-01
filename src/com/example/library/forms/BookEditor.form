@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.example.library.forms.BookEditor">
-  <grid id="27dc6" binding="contentPane" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="contentPane" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="15" left="15" bottom="15" right="15"/>
     <constraints>
-      <xy x="20" y="20" width="542" height="400"/>
+      <xy x="20" y="20" width="570" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <preferredSize width="400" height="200"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="55e15" class="javax.swing.JTextField" binding="bookNameField">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -18,7 +20,7 @@
       </component>
       <component id="ce941" class="javax.swing.JTextField" binding="authorNameField">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -26,13 +28,13 @@
       </component>
       <component id="7446f" class="javax.swing.JComboBox" binding="genreComboBox">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
       </component>
       <component id="8f1a6" class="javax.swing.JCheckBox" binding="isTakenCheckBox">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Is unavailable"/>
@@ -65,24 +67,29 @@
           <text value="Genre"/>
         </properties>
       </component>
-      <component id="6491f" class="javax.swing.JButton" binding="cancelButton" default-binding="true">
-        <constraints>
-          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <background color="-3402481"/>
-          <icon value="toolbarButtonGraphics/general/Delete16.gif"/>
-          <text value="Cancel"/>
-        </properties>
-      </component>
       <component id="43a92" class="javax.swing.JButton" binding="saveButton" default-binding="true">
         <constraints>
-          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
         </constraints>
         <properties>
           <background color="-12527841"/>
-          <icon value="toolbarButtonGraphics/general/Save24.gif"/>
+          <font name="Arial Black"/>
+          <foreground color="-1"/>
           <text value="Save"/>
+        </properties>
+      </component>
+      <component id="6491f" class="javax.swing.JButton" binding="cancelButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3402481"/>
+          <focusable value="true"/>
+          <font name="Arial Black"/>
+          <foreground color="-1"/>
+          <text value="Cancel"/>
         </properties>
       </component>
     </children>
